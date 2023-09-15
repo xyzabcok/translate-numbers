@@ -4,11 +4,12 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
 }
 
 .wrapper {
-    max-width: 1000px;
-    border: 5px solid black;
+    max-width: 100%;
 }
 
 .current-num {
@@ -20,9 +21,26 @@ body {
     padding: 50px;
 }
 
-.user-input {}
+.user-input {
+    text-align: center;
+}
 
 .past-nums {
     font-size: 0.8rem;
     color: hsla(0, 0%, 0%, 0.5);
+}
+
+ul.correct-answers {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+
+ul.correct-answers>li {
+    border: 2px green solid;
+    padding: 10px;
+}
+
+ul.streak-counter {
+    list-style: none;
 }
